@@ -1,0 +1,7 @@
+.carousel-card:hover {
+    .card-title,
+    .card-text,
+    .card-btn {
+        color: white;
+    }
+}

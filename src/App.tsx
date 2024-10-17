@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./layout/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "pages/Home/HomePage";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Footer from "layout/Footer";
+import CourseLanding from "pages/Course/CourseLanding/CourseLanding";
+import "./App.css"
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <BrowserRouter>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Homepage />} />
+                    <Route path="courses" element={<CourseLanding />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
+        </>
+    );
 }
 
 export default App;
