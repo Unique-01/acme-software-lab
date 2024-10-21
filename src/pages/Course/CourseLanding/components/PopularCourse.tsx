@@ -153,7 +153,7 @@ const PopularCourse: React.FC = () => {
                 </div>
                 <div className="text-center mt-16">
                     <Link
-                        to=""
+                        to="/courses/list"
                         className="bg-neutral-100 border-gray-300 border rounded font-semibold text-sm p-3 px-5 hover:bg-neutral-200 transition ">
                         Explore All Programs
                     </Link>

@@ -23,7 +23,7 @@ interface CourseCardProps {
 
 const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
     return (
-        <div className="shadow-lg p-5 rounded bg-white">
+        <div className="shadow-lg p-5 rounded-lg bg-white hover:border-blue-800 hover:border-[1.5px] transition-all">
             <div className="mb-7">
                 <img
                     src={course.image}
@@ -35,7 +35,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
                 {course.category}
             </p>
             <h3 className="font-semibold text-xl flex justify-between">
-                <span>{course.title}</span>
+                <span className="capitalize">{course.title}</span>
                 <span>
                     <FiArrowUpRight />
                 </span>

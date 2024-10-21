@@ -1,0 +1,223 @@
+[
+    {
+        "_id": "1",
+        "category": "computer basics",
+        "title": "Computer Proficiency",
+        "description": "Learn Basics of Computer Hardware and Software and Operating Systems Overview.",
+        "rating": 4,
+        "reviewCount": 500,
+        "instructor": {
+            "name": "Jane Cooper",
+            "enrolledCount": 200,
+            "profilePicture": "/assets/course2.jpeg"
+        },
+        "price": 50000,
+        "image": "/assets/course2.jpeg",
+        "curriculum": [
+            "Introduction to Computers",
+            "Microsoft Office Suite",
+            "Internet and Email Basics",
+            "Basic Troubleshooting",
+            "Practical Projects and Exercises"
+        ]
+    },
+    {
+        "_id": "2",
+        "category": "Data",
+        "title": "Data Science",
+        "description": "Learn Basics of Computer Hardware and Software and Operating Systems Overview.",
+        "rating": 4,
+        "reviewCount": 500,
+        "instructor": {
+            "name": "Jane Cooper",
+            "enrolledCount": 200,
+            "profilePicture": "/assets/course.jpeg"
+        },
+        "price": 50000,
+        "image": "/assets/course.jpeg",
+        "curriculum": [
+            "Introduction to Data Science",
+            "Python for Data Science",
+            "Data Cleaning and Preprocessing",
+            "Introduction to Machine Learning",
+            "Practical Data Science Projects"
+        ]
+    },
+    {
+        "_id": "3",
+        "category": "computer basics",
+        "title": "Computer Proficiency",
+        "description": "Learn Basics of Computer Hardware and Software and Operating Systems Overview.",
+        "rating": 4,
+        "reviewCount": 500,
+        "instructor": {
+            "name": "Jane Cooper",
+            "enrolledCount": 200,
+            "profilePicture": "/assets/course2.jpeg"
+        },
+        "price": 50000,
+        "image": "/assets/course2.jpeg",
+        "curriculum": [
+            "Introduction to Computers",
+            "Microsoft Office Suite",
+            "Internet and Email Basics",
+            "Basic Troubleshooting",
+            "Practical Projects and Exercises"
+        ]
+    },
+    {
+        "_id": "4",
+        "category": "design",
+        "title": "Graphics Design",
+        "description": "Learn Basics of Computer Hardware and Software and Operating Systems Overview.",
+        "rating": 4,
+        "reviewCount": 500,
+        "instructor": {
+            "name": "Jane Cooper",
+            "enrolledCount": 200,
+            "profilePicture": "/assets/course2.jpeg"
+        },
+        "price": 50000,
+        "image": "/assets/course2.jpeg",
+        "curriculum": [
+            "Introduction to Computers",
+            "Microsoft Office Suite",
+            "Internet and Email Basics",
+            "Basic Troubleshooting",
+            "Practical Projects and Exercises"
+        ]
+    },
+    {
+        "_id": "5",
+        "category": "Data",
+        "title": "Data Science",
+        "description": "Learn Basics of Computer Hardware and Software and Operating Systems Overview.",
+        "rating": 4,
+        "reviewCount": 500,
+        "instructor": {
+            "name": "Jane Cooper",
+            "enrolledCount": 200,
+            "profilePicture": "/assets/course.jpeg"
+        },
+        "price": 50000,
+        "image": "/assets/course.jpeg",
+        "curriculum": [
+            "Introduction to Data Science",
+            "Python for Data Science",
+            "Data Cleaning and Preprocessing",
+            "Introduction to Machine Learning",
+            "Practical Data Science Projects"
+        ]
+    },
+    {
+        "_id": "6",
+        "category": "design",
+        "title": "UI/UX Design ",
+        "description": "Learn Basics of Computer Hardware and Software and Operating Systems Overview.",
+        "rating": 4,
+        "reviewCount": 500,
+        "instructor": {
+            "name": "Jane Cooper",
+            "enrolledCount": 200,
+            "profilePicture": "/assets/course2.jpeg"
+        },
+        "price": 50000,
+        "image": "/assets/course2.jpeg",
+        "curriculum": [
+            "Introduction to Computers",
+            "Microsoft Office Suite",
+            "Internet and Email Basics",
+            "Basic Troubleshooting",
+            "Practical Projects and Exercises"
+        ]
+    },
+    {
+        "_id": "7",
+        "category": "Networking",
+        "title": "Networking for beginners",
+        "description": "Learn Basics of Computer Hardware and Software and Operating Systems Overview.",
+        "rating": 4,
+        "reviewCount": 500,
+        "instructor": {
+            "name": "Jane Cooper",
+            "enrolledCount": 200,
+            "profilePicture": "/assets/course2.jpeg"
+        },
+        "price": 50000,
+        "image": "/assets/course2.jpeg",
+        "curriculum": [
+            "Introduction to Computers",
+            "Microsoft Office Suite",
+            "Internet and Email Basics",
+            "Basic Troubleshooting",
+            "Practical Projects and Exercises"
+        ]
+    },
+    {
+        "_id": "8",
+        "category": "web development",
+        "title": "Frontend basics",
+        "description": "Learn Basics of Computer Hardware and Software and Operating Systems Overview.",
+        "rating": 4,
+        "reviewCount": 500,
+        "instructor": {
+            "name": "Jane Cooper",
+            "enrolledCount": 200,
+            "profilePicture": "/assets/course2.jpeg"
+        },
+        "price": 50000,
+        "image": "/assets/course2.jpeg",
+        "curriculum": [
+            "Introduction to Computers",
+            "Microsoft Office Suite",
+            "Internet and Email Basics",
+            "Basic Troubleshooting",
+            "Practical Projects and Exercises"
+        ]
+    },
+    {
+        "_id": "9",
+        "category": "web development",
+        "title": "Introduction to backend development",
+        "description": "Learn Basics of Computer Hardware and Software and Operating Systems Overview.",
+        "rating": 4,
+        "reviewCount": 500,
+        "instructor": {
+            "name": "Jane Cooper",
+            "enrolledCount": 200,
+            "profilePicture": "/assets/course2.jpeg"
+        },
+        "price": 50000,
+        "image": "/assets/course2.jpeg",
+        "curriculum": [
+            "Introduction to Computers",
+            "Microsoft Office Suite",
+            "Internet and Email Basics",
+            "Basic Troubleshooting",
+            "Practical Projects and Exercises"
+        ]
+    },
+    {
+        "_id": "10",
+        "category": "cybersecurity",
+        "title": "Cybersecurity 101",
+        "description": "Learn Basics of Computer Hardware and Software and Operating Systems Overview.",
+        "rating": 4,
+        "reviewCount": 500,
+        "instructor": {
+            "name": "Jane Cooper",
+            "enrolledCount": 200,
+            "profilePicture": "/assets/course2.jpeg"
+        },
+        "price": 50000,
+        "image": "/assets/course2.jpeg",
+        "curriculum": [
+            "Introduction to Computers",
+            "Microsoft Office Suite",
+            "Internet and Email Basics",
+            "Basic Troubleshooting",
+            "Practical Projects and Exercises"
+        ]
+    }
+    
+]
