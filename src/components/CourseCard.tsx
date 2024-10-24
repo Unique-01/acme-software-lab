@@ -1,5 +1,6 @@
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 interface Course {
     _id: number | string;
@@ -34,12 +35,14 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             <p className="capitalize text-blue-800 text-sm font-semibold mb-2">
                 {course.category}
             </p>
-            <h3 className="font-semibold text-xl flex justify-between">
-                <span className="capitalize">{course.title}</span>
-                <span>
-                    <FiArrowUpRight />
-                </span>
-            </h3>
+            <Link to={`/courses/list/${course._id}`}>
+                <h3 className="font-semibold text-xl flex justify-between">
+                    <span className="capitalize">{course.title}</span>
+                    <span>
+                        <FiArrowUpRight />
+                    </span>
+                </h3>
+            </Link>
             <p className="font-normal text-gray-500 text-sm mt-3">
                 {course.description}
             </p>

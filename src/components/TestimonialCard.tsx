@@ -17,7 +17,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
                     <img
                         src={testimonial.image}
                         alt="Testimonial"
-                        className="rounded-full w-24 h-24"
+                        className="rounded-full w-20 h-20"
                     />
                 </div>
                 <div>

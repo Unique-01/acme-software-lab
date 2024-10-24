@@ -43,7 +43,7 @@ const Tutors: React.FC = () => {
                     <br /> We offer the knowledge and abilities.
                 </p>
             </div>
-            <div className="grid grid-cols-4 gap-5 mt-10">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
                 {tutors.map((tutor, index) => (
                     <div key={index}>
                         <TutorCard tutor={tutor} />
