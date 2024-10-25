@@ -10,6 +10,7 @@ import "./App.css";
 import CourseList from "pages/Course/CourseList";
 import CourseDetail from "pages/Course/CourseDetail";
 import AboutPage from "pages/AboutPage";
+import SignUp from "pages/Auth/SignUp";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                         element={<CourseDetail />}
                     />
                     <Route path="about" element={<AboutPage />} />
+                    <Route path="/signup" element={<SignUp />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
