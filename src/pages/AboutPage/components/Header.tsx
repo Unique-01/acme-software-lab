@@ -3,7 +3,7 @@ import headerImg2 from "../assets/headerImg2.jpeg";
 
 const Header: React.FC = () => {
     return (
-        <div className="grid md:grid-cols-2 ">
+        <div className="grid md:grid-cols-2 pb-20 pt-10 ">
             <div>
                 <h1 className="text-blue-800 text-5xl font-bold mb-5">
                     About Us
