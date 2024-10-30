@@ -11,6 +11,7 @@ import CourseList from "pages/Course/CourseList";
 import CourseDetail from "pages/Course/CourseDetail";
 import AboutPage from "pages/AboutPage";
 import SignUp from "pages/Auth/SignUp";
+import ServiceDetail from "pages/ServiceDetail";
 
 function App() {
     return (
@@ -27,6 +28,10 @@ function App() {
                     />
                     <Route path="about" element={<AboutPage />} />
                     <Route path="/signup" element={<SignUp />} />
+                    <Route
+                        path="service/:serviceSlug"
+                        element={<ServiceDetail />}
+                    />
                 </Routes>
                 <Footer />
             </BrowserRouter>

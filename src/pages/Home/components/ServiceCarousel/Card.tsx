@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
+import slugify from "react-slugify";
 
 interface CardProps {
     title: string;
@@ -24,7 +25,7 @@ const Card: React.FC<CardProps> = ({ title, description, icon, bgColor }) => {
                 {description}
             </p>
             <Link
-                to=""
+                to={`/service/${slugify(title)}`}
                 className="text-blue-700 font-medium card-btn flex items-center">
                 Learn More{" "}
                 <span className="ml-2">
