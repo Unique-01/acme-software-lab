@@ -12,6 +12,7 @@ import CourseDetail from "pages/Course/CourseDetail";
 import AboutPage from "pages/AboutPage";
 import SignUp from "pages/Auth/SignUp";
 import ServiceDetail from "pages/ServiceDetail";
+import Contact from "pages/Contact";
 
 function App() {
     return (
@@ -32,7 +33,9 @@ function App() {
                         path="service/:serviceSlug"
                         element={<ServiceDetail />}
                     />
+                    <Route path="contact" element={<Contact />} />
                 </Routes>
+
                 <Footer />
             </BrowserRouter>
         </>
