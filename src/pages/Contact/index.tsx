@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
                                 </button>
                             </form>
                         </div>
-                        <div className="font-normal">
+                        <div className="font-normal text-gray-900">
                             <p className=" mb-5">
                                 Ita Osun Junction 36, Ilode Street, Ile-Ife Osun
                                 State, Nigeria.

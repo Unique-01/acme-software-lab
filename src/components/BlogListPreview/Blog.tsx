@@ -62,7 +62,7 @@ const Blog: React.FC = () => {
                 </div>
                 <div className="flex justify-center mt-16">
                     <Link
-                        to=""
+                        to="/blogs"
                         className="bg-blue-800 text-white p-5 px-24 gap-5 flex items-center rounded-xl font-bold text-lg">
                         View all <FaArrowRight />
                     </Link>

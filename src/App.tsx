@@ -13,6 +13,7 @@ import AboutPage from "pages/AboutPage";
 import SignUp from "pages/Auth/SignUp";
 import ServiceDetail from "pages/ServiceDetail";
 import Contact from "pages/Contact";
+import BlogList from "pages/Blog/BlogList";
 
 function App() {
     return (
@@ -34,6 +35,7 @@ function App() {
                         element={<ServiceDetail />}
                     />
                     <Route path="contact" element={<Contact />} />
+                    <Route path="blogs" element={<BlogList />} />
                 </Routes>
 
                 <Footer />
