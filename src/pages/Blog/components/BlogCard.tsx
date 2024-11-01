@@ -34,7 +34,7 @@ export const BlogCardFirst: React.FC<BlogProps> = ({ blog }) => {
                 </p>
                 <div className="my-8">
                     <Link
-                        to=""
+                        to={`/blogs/${blog.id}`}
                         className="border-[1.5px] text-blue-800 font-bold text-sm rounded-lg border-blue-800 p-3 px-6  hover:bg-blue-800 hover:text-white transition-all ease-in-out duration-300">
                         Read More
                     </Link>
@@ -67,7 +67,7 @@ const BlogCard: React.FC<BlogProps> = ({ blog }) => {
                 </p>
                 <div className="my-8">
                     <Link
-                        to=""
+                        to={`/blogs/${blog.id}`}
                         className="border-[1.5px] text-blue-800 font-bold text-sm rounded-lg border-blue-800 p-3 px-6  hover:bg-blue-800 hover:text-white transition-all ease-in-out duration-300">
                         Read More
                     </Link>

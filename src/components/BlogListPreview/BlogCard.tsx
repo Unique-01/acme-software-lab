@@ -29,7 +29,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
                     <p className="text-gray-500 font-normal mb-5">
                         {blog.content}
                     </p>
-                    <Link to="" className="underline text-blue-800 font-bold">
+                    <Link
+                        to={`/blogs/${blog._id}`}
+                        className="underline text-blue-800 font-bold">
                         Read More...
                     </Link>
                 </div>

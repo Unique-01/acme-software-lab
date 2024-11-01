@@ -14,6 +14,7 @@ import SignUp from "pages/Auth/SignUp";
 import ServiceDetail from "pages/ServiceDetail";
 import Contact from "pages/Contact";
 import BlogList from "pages/Blog/BlogList";
+import BlogDetail from "pages/Blog/BlogDetail";
 
 function App() {
     return (
@@ -36,6 +37,7 @@ function App() {
                     />
                     <Route path="contact" element={<Contact />} />
                     <Route path="blogs" element={<BlogList />} />
+                    <Route path="blogs/:blogId" element={<BlogDetail />} />
                 </Routes>
 
                 <Footer />
