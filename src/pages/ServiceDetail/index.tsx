@@ -46,7 +46,7 @@ const ServiceDetail: React.FC = () => {
                         </button>
                     </div>
                 </div>
-                <div>
+                <div className="hidden lg:block">
                     <div className="bg-neutral-100 h-[752px] w-[450px] ms-10 rounded-lg relative">
                         <div className="absolute -right-10 -top-5">
                             <img

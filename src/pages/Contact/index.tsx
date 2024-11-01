@@ -68,10 +68,10 @@ const Contact: React.FC = () => {
                                 <iframe
                                     title="Acme"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.8381335792847!2d4.561789975880582!3d7.483119211266753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60baaa3a46570691%3A0x2d66a3159d3086c6!2sAcme%20Software%20Lab!5e0!3m2!1sen!2sng!4v1730304739080!5m2!1sen!2sng"
-                                    width="348"
+                                    // width="348"
                                     height="155"
                                     loading="lazy"
-                                    className="rounded-lg"></iframe>
+                                    className="rounded-lg w-full"></iframe>
                             </div>
                         </div>
                     </div>

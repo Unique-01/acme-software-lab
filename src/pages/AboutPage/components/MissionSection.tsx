@@ -2,9 +2,9 @@ import MissionImg from "../assets/missionImg.jpeg";
 
 const MissionSection: React.FC = () => {
     return (
-        <div className="grid lg:grid-cols-2 py-20">
-            <div className="">
-                <div className="bg-neutral-100 h-[474px] w-[450px] rounded-lg relative">
+        <div className="lg:grid grid-cols-2 lg:py-20 pb-20">
+            <div className="hidden lg:block">
+                <div className="bg-neutral-100 h-[474px] max-w-[450px] rounded-lg relative">
                     <div className="absolute left-5 top-10">
                         <img
                             src={MissionImg}

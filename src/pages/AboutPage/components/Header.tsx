@@ -3,7 +3,7 @@ import headerImg2 from "../assets/headerImg2.jpeg";
 
 const Header: React.FC = () => {
     return (
-        <div className="grid md:grid-cols-2 pb-20 pt-10 ">
+        <div className="lg:grid grid-cols-2 pb-20 pt-10 ">
             <div>
                 <h1 className="text-blue-800 text-5xl font-bold mb-5">
                     About Us
@@ -20,7 +20,7 @@ const Header: React.FC = () => {
                     fullest potential.
                 </p>
             </div>
-            <div>
+            <div className="hidden lg:block">
                 <div className="bg-neutral-100 h-[474px] w-[450px] ms-10 rounded-lg relative">
                     <div className="absolute -right-10 -top-5">
                         <img

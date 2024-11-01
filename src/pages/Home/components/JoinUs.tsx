@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bgImage from "../assets/joinImg.jpeg";
 import { FaArrowRight } from "react-icons/fa6";
 const JoinUs: React.FC = () => {
@@ -23,9 +24,11 @@ const JoinUs: React.FC = () => {
 
                     {/* Buttons */}
                     <div className="flex space-x-4 transition-all duration-500 ease-in-out">
-                        <button className=" flex items-center gap-3 px-6 py-3 bg-blue-700 hover:bg-blue-800 rounded-full text-white font-normal transition">
+                        <Link
+                            to="/signup"
+                            className=" flex items-center gap-3 px-6 py-3 bg-blue-700 hover:bg-blue-800 rounded-full text-white font-normal transition">
                             Register <FaArrowRight />
-                        </button>
+                        </Link>
                         <button className="flex gap-3 items-center px-6 py-3 border  hover:bg-neutral-900 rounded-full text-white font-normal transition">
                             More Enquiries <FaArrowRight />
                         </button>
