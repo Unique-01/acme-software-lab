@@ -1,10 +1,8 @@
 import React from "react";
-import Navbar from "./layout/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "pages/Home/HomePage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Footer from "layout/Footer";
 import CourseLanding from "pages/Course/CourseLanding/CourseLanding";
 import "./App.css";
 import CourseList from "pages/Course/CourseList";
@@ -15,32 +13,40 @@ import ServiceDetail from "pages/ServiceDetail";
 import Contact from "pages/Contact";
 import BlogList from "pages/Blog/BlogList";
 import BlogDetail from "pages/Blog/BlogDetail";
+import DashboardLayout from "pages/StudentDashboard/layout/DashboardLayout";
+import StudentDashboard from "pages/StudentDashboard";
+import GeneralLayout from "layout/GeneralLayout";
 
 function App() {
     return (
         <>
             <BrowserRouter>
-                <Navbar />
+                {/* <Navbar /> */}
                 <Routes>
-                    <Route path="/" element={<Homepage />} />
-                    <Route path="courses" element={<CourseLanding />} />
-                    <Route path="courses/list" element={<CourseList />} />
-                    <Route
-                        path="courses/list/:courseId"
-                        element={<CourseDetail />}
-                    />
-                    <Route path="about" element={<AboutPage />} />
-                    <Route path="/signup" element={<SignUp />} />
-                    <Route
-                        path="service/:serviceSlug"
-                        element={<ServiceDetail />}
-                    />
-                    <Route path="contact" element={<Contact />} />
-                    <Route path="blogs" element={<BlogList />} />
-                    <Route path="blogs/:blogId" element={<BlogDetail />} />
+                    <Route path="/" element={<GeneralLayout />}>
+                        <Route index element={<Homepage />} />
+                        <Route path="courses" element={<CourseLanding />} />
+                        <Route path="courses/list" element={<CourseList />} />
+                        <Route
+                            path="courses/list/:courseId"
+                            element={<CourseDetail />}
+                        />
+                        <Route path="about" element={<AboutPage />} />
+                        <Route path="/signup" element={<SignUp />} />
+                        <Route
+                            path="service/:serviceSlug"
+                            element={<ServiceDetail />}
+                        />
+                        <Route path="contact" element={<Contact />} />
+                        <Route path="blogs" element={<BlogList />} />
+                        <Route path="blogs/:blogId" element={<BlogDetail />} />
+                    </Route>
+                    <Route path="student" element={<DashboardLayout />}>
+                        <Route index element={<StudentDashboard />} />
+                    </Route>
                 </Routes>
 
-                <Footer />
+                {/* <Footer /> */}
             </BrowserRouter>
         </>
     );
