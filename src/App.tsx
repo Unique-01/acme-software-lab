@@ -16,6 +16,7 @@ import BlogDetail from "pages/Blog/BlogDetail";
 import DashboardLayout from "pages/StudentDashboard/layout/DashboardLayout";
 import StudentDashboard from "pages/StudentDashboard";
 import GeneralLayout from "layout/GeneralLayout";
+import Profile from "pages/StudentDashboard/Profile";
 
 function App() {
     return (
@@ -43,6 +44,7 @@ function App() {
                     </Route>
                     <Route path="student" element={<DashboardLayout />}>
                         <Route index element={<StudentDashboard />} />
+                        <Route path="profile" element={<Profile />} />
                     </Route>
                 </Routes>
 

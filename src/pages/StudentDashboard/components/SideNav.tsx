@@ -8,7 +8,7 @@ import AcmeLogo from "assets/acmeLogo.png";
 
 const SideNav: React.FC = () => {
     return (
-        <div className="p-5 py-10 poppins text-neutral-600 bg-gray-100 fixed top-0 min-h-screen">
+        <div className=" py-10 poppins font-medium text-neutral-600 bg-gray-100 sticky top-0 min-h-screen flex flex-col items-center">
             <div className="mb-14">
                 <Link to="/">
                     <img src={AcmeLogo} alt="ACME" className="max-w-44" />
