@@ -17,6 +17,7 @@ import DashboardLayout from "pages/StudentDashboard/layout/DashboardLayout";
 import StudentDashboard from "pages/StudentDashboard";
 import GeneralLayout from "layout/GeneralLayout";
 import Profile from "pages/StudentDashboard/Profile";
+import Timetable from "pages/StudentDashboard/Timetable";
 
 function App() {
     return (
@@ -45,6 +46,7 @@ function App() {
                     <Route path="student" element={<DashboardLayout />}>
                         <Route index element={<StudentDashboard />} />
                         <Route path="profile" element={<Profile />} />
+                        <Route path="timetable" element={<Timetable />} />
                     </Route>
                 </Routes>
 

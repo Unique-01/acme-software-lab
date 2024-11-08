@@ -93,13 +93,13 @@ const Profile: React.FC = () => {
                         <div className="p-2 px-4 bg-slate-200 rounded-tr-lg border-b border-b-slate-400">
                             <h3 className="text-blue-800 text-xl">Contact</h3>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-5 p-5 font-normal">
-                            <div>
+                        <div className="grid md:grid-cols-2 gap-10 p-5 font-normal">
+                            <div >
                                 <div className="mb-4">
                                     <p className="text-lg text-gray-500 ">
                                         Email
                                     </p>
-                                    <p className="text-2xl">
+                                    <p className="text-2xl md:text-xl lg:text-2xl text-wrap">
                                         kelvin.yeboah@gmail.com
                                     </p>
                                 </div>
