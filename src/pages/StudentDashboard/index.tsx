@@ -1,6 +1,38 @@
 import HeroImg from "./assets/HeroImg.svg";
+import { FaPlay, FaCheckSquare, FaTrophy, FaUserFriends } from "react-icons/fa";
+import { MdOutlinePlayCircle } from "react-icons/md";
+import { GoChecklist } from "react-icons/go";
+import DashboardCard from "./components/DashboardCard";
+import ClassComponent from "./components/ClassComponent";
 
 const StudentDashboard: React.FC = () => {
+    const cardsData = [
+        {
+            icon: <MdOutlinePlayCircle className="text-blue-500" size={20} />,
+            count: 5,
+            label: "Enrolled Courses",
+            bgColor: "#f0f4ff",
+        },
+        {
+            icon: <GoChecklist className="text-purple-500" size={20} />,
+            count: 2,
+            label: "Active Courses",
+            bgColor: "#f0f4ff",
+        },
+        {
+            icon: <FaTrophy className="text-green-500" size={20} />,
+            count: 3,
+            label: "Completed Courses",
+            bgColor: "#e6f9ee",
+        },
+        {
+            icon: <FaUserFriends className="text-orange-500" size={20} />,
+            count: 2,
+            label: "Course Instructors",
+            bgColor: "#fff4e6",
+        },
+    ];
+
     const getCurrentDate = (): string => {
         const today = new Date();
         return today.toLocaleDateString("en-US", {
@@ -43,7 +75,25 @@ const StudentDashboard: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-3 mt-7">
+
+            <div className="my-5">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                    {cardsData.map((card, index) => (
+                        <DashboardCard
+                            key={index}
+                            icon={card.icon}
+                            count={card.count}
+                            label={card.label}
+                            bgColor={card.bgColor}
+                        />
+                    ))}
+                </div>
+            </div>
+
+            <div>
+                <ClassComponent />
+            </div>
+            {/* <div className="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-3 mt-7">
                 <div className="bg-yellow-300 border-[1.5px] border-orange-500 py-6 text-center rounded-lg ">
                     <p className=" text-gray-800 font-semibold mb-3">
                         Total Classes
@@ -74,10 +124,9 @@ const StudentDashboard: React.FC = () => {
                     </p>
                     <p className="text-4xl text-blue-800">20%</p>
                 </div>
-            </div>
-            <div>
-                
-            </div>
+            </div> */}
+            <div></div>
+            <div></div>
         </div>
     );
 };
