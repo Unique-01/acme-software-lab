@@ -148,6 +148,14 @@ const SideNav: React.FC = () => {
                             </li>
                             <li>
                                 <NavLink
+                                    to="/student/payment"
+                                    className="flex gap-3 items-center text-lg">
+                                    <MdOutlinePersonAdd size={24} />
+                                    <span>Payment</span>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
                                     to="/student/registration"
                                     className="flex gap-3 items-center text-lg">
                                     <MdOutlinePersonAdd size={24} />

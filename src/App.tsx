@@ -18,6 +18,8 @@ import StudentDashboard from "pages/StudentDashboard";
 import GeneralLayout from "layout/GeneralLayout";
 import Profile from "pages/StudentDashboard/Profile";
 import Timetable from "pages/StudentDashboard/Timetable";
+import PaymentTable from "pages/StudentDashboard/PaymentTable";
+import PaymentCheckout from "pages/StudentDashboard/PaymentCheckout";
 
 function App() {
     return (
@@ -47,7 +49,13 @@ function App() {
                         <Route index element={<StudentDashboard />} />
                         <Route path="profile" element={<Profile />} />
                         <Route path="timetable" element={<Timetable />} />
+                        <Route path="payment" element={<PaymentTable />} />
+                        <Route
+                            path="payment/:courseTitle"
+                            element={<PaymentCheckout />}
+                        />
                     </Route>
+                    <Route path="*" element={<h1>Page not found</h1>} />
                 </Routes>
 
                 {/* <Footer /> */}
