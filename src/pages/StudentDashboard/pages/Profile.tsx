@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import UserImg from "./assets/user.png";
+import UserImg from "../assets/user.png";
 import { BsArrowRight } from "react-icons/bs";
-import ProfileTabNavigation from "./components/ProfileTabNavigation";
+import ProfileTabNavigation from "../components/ProfileTabNavigation";
 
 interface UserProps {
     image: string;

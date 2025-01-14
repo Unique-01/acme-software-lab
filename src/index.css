@@ -10,6 +10,13 @@
 .active {
     color: #1b40b3;
 }
+.tutor-active {
+    color: #1b40b3;
+    background-color: #f3f4f6;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;

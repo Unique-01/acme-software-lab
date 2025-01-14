@@ -1,4 +1,4 @@
-import PaymentTabNavigation from "./components/PaymentTabNavigation";
+import PaymentTabNavigation from "../components/PaymentTabNavigation";
 
 const PaymentTable: React.FC = () => {
     return (

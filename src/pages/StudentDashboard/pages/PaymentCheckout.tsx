@@ -5,14 +5,12 @@ type PaymentOption = "part" | "full";
 
 const PaymentCheckout: React.FC = () => {
     const [selected, setSelected] = useState<PaymentOption | null>("full");
-    const [learningMode, setLearningMode] = useState<string>("");
-    const [course, setCourse] = useState<string>("");
 
     const handleSelect = (option: PaymentOption) => {
         setSelected(option);
     };
     return (
-        <div className="poppins">
+        <div className="poppins mb-5">
             <div className="p-8 ps-10">
                 <h1 className="poppins text-xl">Payment</h1>
             </div>
@@ -68,17 +66,31 @@ const PaymentCheckout: React.FC = () => {
                         <HiTicket className="text-blue-800" size={40} />
                         <span className="text-sm font-normal"> Summary</span>
                     </div>
-                    <div className="mt-3">
+                    <div className="mt-3 space-y-3">
                         <p className="text-sm">
                             {selected === "full"
                                 ? "Full Payment"
                                 : "Part Payment"}
                         </p>
-                        <p>
+                        <p className="font-normal text-sm text-gray-600 flex justify-between w-full">
                             <span>Course</span>
-                            <span></span>
+                            <span>Data Analysis</span>
+                        </p>
+                        <p className="font-normal text-sm text-gray-600 flex justify-between w-full">
+                            <span>Mode of Learning</span>
+                            <span>Online</span>
+                        </p>
+                        <hr />
+                        <p className=" flex justify-between w-full">
+                            <span>Total</span>
+                            <span>N25,000</span>
                         </p>
                     </div>
+                </div>
+                <div>
+                    <button className="bg-blue-800 hover:bg-blue-900 transition-all ease-in-out font-semibold rounded text-white w-full text-center p-3">
+                        Pay N25,000
+                    </button>
                 </div>
             </div>
         </div>

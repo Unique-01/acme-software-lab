@@ -6,12 +6,12 @@ const DashboardLayout: React.FC = () => {
     return (
         <div className="relative lg:grid lg:grid-cols-5">
             {/* Sidebar */}
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-1 bg-gray-100">
                 <SideNav />
             </div>
 
             {/* Main content */}
-            <div className="lg:col-span-4">
+            <div className="lg:col-span-4 bg-gray-100">
                 <Header />
                 <Outlet />
             </div>

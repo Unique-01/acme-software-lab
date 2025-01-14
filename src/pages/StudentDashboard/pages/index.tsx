@@ -1,9 +1,9 @@
-import HeroImg from "./assets/HeroImg.svg";
+import HeroImg from "../assets/HeroImg.svg";
 import { FaPlay, FaCheckSquare, FaTrophy, FaUserFriends } from "react-icons/fa";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import { GoChecklist } from "react-icons/go";
-import DashboardCard from "./components/DashboardCard";
-import ClassComponent from "./components/ClassComponent";
+import DashboardCard from "../components/DashboardCard";
+import ClassComponent from "../components/ClassComponent";
 
 const StudentDashboard: React.FC = () => {
     const cardsData = [
