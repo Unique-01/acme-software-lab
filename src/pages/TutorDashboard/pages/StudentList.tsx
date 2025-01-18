@@ -3,6 +3,7 @@ import { updateHeaderTitle } from "pages/hooks/useHeaderTitle";
 import { IoEllipsisHorizontalSharp } from "react-icons/io5";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { LuPhone } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const cellStyle = "text-center py-10";
 const headerCellStyle = "py-7";
@@ -55,9 +56,11 @@ const StudentRow: React.FC<{ student: any; color: string }> = ({
                 </div>
             </td>
             <td className={`${cellStyle} text-gray-700  cursor-pointer`}>
-                <div className="flex justify-center">
+                <Link
+                    to={`/tutor/students/${student.id}`}
+                    className="flex justify-center">
                     <IoEllipsisHorizontalSharp size={20} />
-                </div>
+                </Link>
             </td>
         </tr>
     );

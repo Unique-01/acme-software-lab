@@ -24,6 +24,7 @@ import Attendance from "pages/StudentDashboard/pages/Attendance";
 import TutorDashboardLayout from "pages/TutorDashboard/layout/DashboardLayout";
 import TutorDashboard from "pages/TutorDashboard/pages";
 import StudentList from "pages/TutorDashboard/pages/StudentList";
+import StudentDetails from "pages/TutorDashboard/pages/StudentDetails";
 
 function App() {
     return (
@@ -63,6 +64,7 @@ function App() {
                     <Route path="tutor" element={<TutorDashboardLayout />}>
                         <Route index element={<TutorDashboard />} />
                         <Route path="students" element={<StudentList />} />
+                        <Route path="students/:studentId" element={<StudentDetails />} />
                         {/* <Route path="profile" element={<Profile />} />
                         <Route path="timetable" element={<Timetable />} />
                         <Route path="registration" element={<Registration />} />
