@@ -76,7 +76,7 @@ const SideNav: React.FC = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/tutor/registration"
+                                    to="/tutor/events"
                                     className={({ isActive }) =>
                                         `flex gap-3 items-center text-lg text-gray-200 p-3 px-5 w-full ${
                                             isActive ? "tutor-active" : ""
