@@ -54,8 +54,10 @@ const SideNav: React.FC = () => {
                                     to="/tutor"
                                     end
                                     className={({ isActive }) =>
-                                        `flex gap-3 items-center text-lg text-gray-200 p-3 px-5 w-full ${
-                                            isActive ? "tutor-active" : ""
+                                        `flex gap-3 items-center text-lg  p-3 px-5 w-full ${
+                                            isActive
+                                                ? "tutor-active"
+                                                : "text-gray-200"
                                         }`
                                     }>
                                     <FiHome size={24} />
@@ -66,8 +68,10 @@ const SideNav: React.FC = () => {
                                 <NavLink
                                     to="/tutor/students"
                                     className={({ isActive }) =>
-                                        `flex gap-3 items-center text-lg text-gray-200 p-3 px-5 w-full ${
-                                            isActive ? "tutor-active" : ""
+                                        `flex gap-3 items-center text-lg  p-3 px-5 w-full ${
+                                            isActive
+                                                ? "tutor-active"
+                                                : "text-gray-200"
                                         }`
                                     }>
                                     <FaUserGraduate size={24} />
@@ -78,8 +82,10 @@ const SideNav: React.FC = () => {
                                 <NavLink
                                     to="/tutor/events"
                                     className={({ isActive }) =>
-                                        `flex gap-3 items-center text-lg text-gray-200 p-3 px-5 w-full ${
-                                            isActive ? "tutor-active" : ""
+                                        `flex gap-3 items-center text-lg  p-3 px-5 w-full ${
+                                            isActive
+                                                ? "tutor-active"
+                                                : "text-gray-200"
                                         }`
                                     }>
                                     <IoCalendar size={24} />
@@ -90,8 +96,10 @@ const SideNav: React.FC = () => {
                                 <NavLink
                                     to="/tutor/timetable"
                                     className={({ isActive }) =>
-                                        `flex gap-3 items-center text-lg text-gray-200 p-3 px-5 w-full ${
-                                            isActive ? "tutor-active" : ""
+                                        `flex gap-3 items-center text-lg tp-3 px-5 w-full ${
+                                            isActive
+                                                ? "tutor-active"
+                                                : "text-gray-200"
                                         }`
                                     }>
                                     <IoChatbubblesOutline size={24} />
@@ -100,10 +108,12 @@ const SideNav: React.FC = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/tutor/attendance"
+                                    to="/tutor/"
                                     className={({ isActive }) =>
-                                        `flex gap-3 items-center text-lg text-gray-200 p-3 px-5 w-full ${
-                                            isActive ? "tutor-active" : ""
+                                        `flex gap-3 items-center text-lg p-3 px-5 w-full ${
+                                            isActive
+                                                ? "tutor-active"
+                                                : "text-gray-200"
                                         }`
                                     }>
                                     <FaFilePen size={24} />
@@ -114,8 +124,10 @@ const SideNav: React.FC = () => {
                                 <NavLink
                                     to="/tutor/attendance"
                                     className={({ isActive }) =>
-                                        `flex gap-3 items-center text-lg text-gray-200 p-3 px-5 w-full ${
-                                            isActive ? "tutor-active" : ""
+                                        `flex gap-3 items-center text-lg  p-3 px-5 w-full ${
+                                            isActive
+                                                ? "tutor-active"
+                                                : "text-gray-200"
                                         }`
                                     }>
                                     <IoMdCheckmarkCircleOutline size={24} />

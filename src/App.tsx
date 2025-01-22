@@ -26,6 +26,9 @@ import TutorDashboard from "pages/TutorDashboard/pages";
 import StudentList from "pages/TutorDashboard/pages/StudentList";
 import StudentDetails from "pages/TutorDashboard/pages/StudentDetails";
 import Events from "pages/TutorDashboard/pages/Events";
+import ClassSchedule from "pages/TutorDashboard/pages/ClassSchedule";
+import TutorAttendance from "pages/TutorDashboard/pages/Attendance";
+import LeaveRequests from "pages/TutorDashboard/pages/LeaveRequests";
 
 function App() {
     return (
@@ -67,6 +70,9 @@ function App() {
                         <Route path="students" element={<StudentList />} />
                         <Route path="students/:studentId" element={<StudentDetails />} />
                         <Route path="events" element={<Events/>}/>
+                        <Route path="class-schedule" element={<ClassSchedule/>}/>
+                        <Route path="attendance" element={<TutorAttendance />} />
+                        <Route path="leave-request" element={<LeaveRequests />} />
                         {/* <Route path="profile" element={<Profile />} />
                         <Route path="timetable" element={<Timetable />} />
                         <Route path="registration" element={<Registration />} />
